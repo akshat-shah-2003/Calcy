@@ -1,0 +1,93 @@
+#btn {
+    font-size: 35px;
+    height: 90px;
+    width: 90px;
+    padding: 0;
+    border-color: black;
+    font-family: Consolas;
+    color: black;
+    background-color: gainsboro;
+    border-radius: 3%;
+    border-width: 1px;
+}
+
+#btn1 {
+    font-size: 35px;
+    height: 90px;
+    width: 185px;
+    padding: 0;
+    border-color: black;
+    font-family: Consolas;
+    color: black;
+    background-color: gainsboro;
+    border-radius: 3%;
+    border-width: 1px;
+}
+
+#btn2 {
+    font-size: 35px;
+    height: 90px;
+    width: 90px;
+    padding: 0;
+    border-color: black;
+    font-family: Consolas;
+    color: black;
+    background-color: LightSteelBlue;
+    border-radius: 3%;
+    border-width: 1px;
+}
+#btn3 {
+    font-size: 35px;
+    height: 90px;
+    width: 90px;
+    padding: 0;
+    border-color: black;
+    font-family: Consolas;
+    color: black;
+    background-color: gainsboro;
+    border-radius: 3%;
+    border-width: 1px;
+}
+
+#btn:hover {
+    /* box-shadow: 0 0 8px 0.5px black; */
+    color: white;
+    background-color: gray;
+    border-color: black;
+}
+
+#btn1:hover {
+    /* box-shadow: 0 0 8px 0.5px black; */
+    color: white;
+    background-color: gray;
+    border-color: black;
+}
+
+#btn2:hover {
+    /* box-shadow: 0 0 8px 0.5px black; */
+    color: white;
+    background-color: SteelBlue;
+    border-color: black;
+}
+#btn3:hover {
+    /* box-shadow: 0 0 8px 0.5px black; */
+    color: white;
+    background-color: gray;
+    border-color: black;
+}
+
+#put {
+    border-width: 2px;
+    border-color: black;
+    height: auto;
+    width: 376px;
+    font-size: 40px;
+    font-family: Consolas;
+    background-color: white;
+    color: black;
+
+}
+
+#t1 {
+    width: 20%;
+}

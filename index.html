@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculator</title>
+    <link rel="stylesheet" href="calcy.css">
+    <center>
+    <table id="t1" style="background-color: black;">
+        <tr><td>
+            <center>
+        <input type="text" id="put"></center>
+        <center>
+    <table id="t2" style="background-color:white; ">
+        
+        <tr>
+    <td><button id="btn" onclick="button1()">1</button></td>
+    <td><button id="btn" onclick="button2()">2</button></td>
+    <td><button id="btn" onclick="button3()">3</button></td>
+    <td><button id="btn2" onclick="plus_button()">+</button></td>
+    
+    </tr>
+    <tr>
+    <td><button id="btn" onclick="button4()">4</button></td>
+    <td><button id="btn" onclick="button5()">5</button></td>
+    <td><button id="btn" onclick="button6()">6</button></td>
+    <td><button id="btn2" onclick="minus_button()">-</button></td>
+</tr>
+<tr>
+    <td><button id="btn" onclick="button7()">7</button></td>
+    <td><button id="btn" onclick="button8()">8</button></td>
+    <td><button id="btn" onclick="button9()">9</button></td>
+    <td><button id="btn2" onclick="multiply_button()">*</button></td>
+    </tr>
+    <tr>
+
+        <td><button id="btn" onclick="button0()">0</button></td>
+        <td><button id="btn" onclick="decimal_button()">.</button></td>
+        <td><button id="btn3" onclick="solve()">=</button></td>
+        <td><button id="btn2" onclick="divide_button()">/</button></td>
+    </tr>
+    <tr>
+        <td colspan="2"><button id="btn1" onclick="back(event)">&#9003</button></td>
+        <td colspan="2"><button id="btn1" onclick="clsc()">C</button></td>
+    </tr>
+</td></tr>
+</table>
+</center>
+</table>
+</center>
+</head>
+<body>
+    <script>
+        function button0(){
+            document.getElementById("put").value+="0";
+        }
+        function button1(){
+            document.getElementById("put").value+="1";
+        }
+        function button2(){
+            document.getElementById("put").value+="2";
+        }
+        function button3(){
+            document.getElementById("put").value+="3";
+        }
+        function button4(){
+            document.getElementById("put").value+="4";
+        }
+        function button5(){
+            document.getElementById("put").value+="5";
+        }
+        function button6(){
+            document.getElementById("put").value+="6";
+        }
+        function button7(){
+            document.getElementById("put").value+="7";
+        }
+        function button8(){
+            document.getElementById("put").value+="8";
+        }
+        function button9(){
+            document.getElementById("put").value+="9";
+        }
+        function plus_button(){
+            document.getElementById("put").value+="+";
+        }
+        function minus_button(){
+            document.getElementById("put").value+="-";
+        }
+        function multiply_button(){
+            document.getElementById("put").value+="*";
+        }
+        function divide_button(){
+            document.getElementById("put").value+="/";
+        }
+        function decimal_button(){
+            document.getElementById("put").value+=".";
+        }
+        function solve(){
+            var input=document.getElementById("put").value;
+            document.getElementById("put").value=eval(input);
+        }
+        function clsc(){
+            document.getElementById("put").value = "";
+            document.getElementById("para1").innerHTML = "";
+        }
+        function back(event){
+            document.getElementById("put").value=document.getElementById("put").value.slice(0, -1);
+        }
+    </script>
+</body>
+</html>
